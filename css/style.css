@@ -1,0 +1,124 @@
+/* common css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* common css */
+
+/* nabvar */
+nav{
+padding: 15px 0;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.nav-btn{
+   margin-left: 100px;
+   padding: 10px ;
+   background-color: black;
+   color: white;
+   font-size: 20px;
+   border: none;
+   cursor: pointer;
+}
+
+/* sidebar */
+
+.sidebar{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.384);
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+.sidebar.active{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s;
+}
+.sidebar.active .sidebar-cnt{
+transform: translateX(0);
+}
+.sidebar-cnt{
+    width: 350px;
+    height: 100vh;
+    background-color: whitesmoke;
+    text-align: center;
+    padding-top: 120px;
+    position: relative;
+    transform: translateX(-100%);
+    transition: 0.5s;
+}
+.sidebar-cnt a{
+    margin-bottom: 30px;
+    display: inline-block;
+    color: black;
+    font-size: 18px;
+    font-family:"Open Sans", sans-serif;
+    text-transform: uppercase;
+}
+.sidebar-icon{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 25px;
+    color: red;
+    cursor: pointer;
+}
+/* sidebar */
+
+/* navbar */
+
+/* password */
+
+.wrapper{
+    display: flex;
+    height: 100vh;
+   justify-content: center;
+    align-items: center;
+}
+.wrapper form{
+   box-shadow: rgba(26, 26, 51, 0.596) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+   width: 400px;
+   padding: 15px 10px;
+   
+  
+}
+.wrapper form input{
+    width: 380px;
+    height: 50px;
+    border-radius: 25px;
+   outline: none;
+   border: 1px solid gray;
+   padding-left: 20px;
+  
+}
+form .inputwrapper{
+    position: relative;
+}
+.wrapper form .hidden-eye{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.wrapper button {
+    padding: 28px 25px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button h3{
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+}
+/* password */
+
